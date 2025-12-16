@@ -1,21 +1,6 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual env
 venv/
 .env
-
-# Secrets & keys
-*.pub
-*.pem
-*.key
-
-# OS
+__pycache__/
+*.pyc
 .DS_Store
-
-# Node
-node_modules/
 

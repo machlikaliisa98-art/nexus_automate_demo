@@ -1,4 +1,10 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message": "Nexus Automate API is running!"}
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine
 import models
