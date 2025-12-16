@@ -1,18 +1,7 @@
 from pydantic import BaseModel
 
-class OrderBase(BaseModel):
-    customer_name: str
+class OrderCreate(BaseModel):
     product_name: str
     quantity: int
-    price: float
-
-class OrderCreate(OrderBase):
-    pass
-
-class Order(OrderBase):
-    id: int
-    status: str
-
-    class Config:
-        orm_mode = True
+    location: str
 

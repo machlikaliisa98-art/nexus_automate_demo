@@ -1,14 +1,11 @@
-from sqlalchemy import Column, Integer, String, DateTime, Float
-from database import Base
-from datetime import datetime
+from sqlalchemy import Column, Integer, String
+from .database import Base
 
 class Order(Base):
     __tablename__ = "orders"
+
     id = Column(Integer, primary_key=True, index=True)
-    customer_name = Column(String, index=True)
-    product_name = Column(String)
+    product_name = Column(String, index=True)
     quantity = Column(Integer)
-    price = Column(Float)
-    status = Column(String, default="Pending")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    location = Column(String)
 

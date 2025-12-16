@@ -1,10 +1,8 @@
-fastapi
-uvicorn
-sqlalchemy
-psycopg2-binary
-python-dotenv
-twilio
-openai
-python-multipart
-pydantic
+fastapi==0.106.0
+uvicorn==0.23.2
+sqlalchemy==2.0.22
+psycopg2-binary==2.9.7
+python-dotenv==1.0.1
+twilio==8.12.1
+python-multipart==0.0.6
 
